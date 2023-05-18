@@ -1,0 +1,43 @@
+.Main {
+  background-color: rgb(226, 221, 222);
+}
+.first {
+  display: block;
+  margin-left: 45%;
+  margin-right: auto;
+  width: 10%;
+}
+.heading {
+  text-align: center;
+}
+.para {
+  font-size: 22px;
+  font-weight: 400;
+  color: #5a5a5a;
+  text-align: center;
+}
+.styles_button__C60rR:hover {
+  background: #e8e8e8;
+}
+
+.sign-in-form {
+  width: 400px;
+  height: auto;
+  border-radius: 3%;
+  box-shadow: 0 0 3px 0 rgb(199, 118, 118);
+  background: white;
+  padding: 20px;
+  margin: 40px auto auto auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.buttons {
+  margin-top: 1%;
+  text-align: center;
+}
+.permission {
+  font-size: 16;
+  font-weight: 400;
+  color: #5a5a5a;
+  text-align: center;
+}

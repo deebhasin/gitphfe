@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import ProductHunt from "./components/ProductHunt";
+import { useEffect, useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [signUp, setSignUp] = useState(true);
+
+  useEffect(() => {
+    console.log("useEffect", signUp);
+  }, [signUp]);
+
+  const changeForm = (value) => {
+    setSignUp(value);
+  };
+
+  console.log(signUp);
+  return <ProductHunt />;
+  // return signUp ? <SignUp onClick={changeForm} /> : <Login onClick={changeForm} />;
 }
 
 export default App;
